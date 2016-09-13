@@ -35,12 +35,12 @@ High-level design for attendance system. Following section details user-interact
     ``` JavaScript 
     //Example Teacher/Student Schemas 
     //userObject
-    var teacher1 = {userid:1, //unique per user
+    UserObject teacher1 = {userid:1, //unique per user
       accountType : "Teacher",
       email: "teacher@berkeley.edu",
       classesTaught : [] //classObjects to be implemented later
     }
-    var student1 = {userid:2, //unique per user
+    UserObject student1 = {userid:2, //unique per user
       accountType : "Student",
       email: "student@berkeley.edu",
       classesTaken : [] //classObjects to be implemented later
@@ -58,7 +58,7 @@ High-level design for attendance system. Following section details user-interact
     //Example classObject
     //classObject
     
-    var class1 = {classid:1, //unique per class
+    ClassObject class1 = {classid:1, //unique per class
       teacher: "Teacher Name",
       className : "Class Name",
       classTimeAndDay : dayAndTimeOfClass, 
