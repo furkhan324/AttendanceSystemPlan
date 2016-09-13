@@ -4,7 +4,7 @@
 
 High-level design for attendance system. Following section details user-interactions possible, pseudocode implementations of the most relevant functions that power the user-interactions, and lastly any relevant APIs.
 
-Requirements/Contingencies:
+<h3>Requirements/Contingencies:</h3>
 
 - For teachers: UI to set class times/show attendance (Web only)
 - For students: Manual UI to enroll/check-in (Mobile App/Web) 
@@ -142,7 +142,7 @@ Requirements/Contingencies:
   If not alert user.
   
 - <h3>Admin Panel (Web)</h3>
-  - For teacher: Parses classObject data to see attendance. 
+  - For teacher: Application parses classObject data to see attendance. 
   - Attendance Trend Visualization: Flot.js is a neat library that can be used to render attendance trends in graph format
   - Important metrics such as dailyAttendance, dailyAbsences, averages, etc. can be determined with relevant operations on .students and .classAttendancePerSession attributes of classObject
   
