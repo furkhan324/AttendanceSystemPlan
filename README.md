@@ -7,7 +7,7 @@ High-level design for attendance system. Following section details user-interact
 <h3>Requirements/Contingencies:</h3>
 
 - For teachers: UI to set class times/show attendance (Web only)
-- For students: Manual UI to enroll/check-in (Mobile App/Web) 
+- For students: UI to enroll/check-in (Mobile App/Web) 
 - For students: Push Notifications/Geolocation for auto-check-in(Mobile)
 - For both:
 
