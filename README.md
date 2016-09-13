@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-High-level design for attendace system. Following section details user-interactions possible, pseudocode implementations of the most relevant functions that power the user-interactions, and lastly any relevant APIs.
+High-level design for attendance system. Following section details user-interactions possible, pseudocode implementations of the most relevant functions that power the user-interactions, and lastly any relevant APIs.
 
 Requirements/Contingencies:
 
@@ -32,7 +32,7 @@ Requirements/Contingencies:
     to save time from custom implementation. 
   - Write User objects to DB after OAuth (if sign-up)
   
-    ``` JSON 
+    ``` JavaScript 
     //Example Teacher/Student Schemas 
     //userObject
     var teacher1 = {userid:1, //unique per user
@@ -54,7 +54,7 @@ Requirements/Contingencies:
     
     <code>ng-submit</code>
     
-    ```JSON
+    ```JavaScript
     //Example classObject
     //classObject
     
@@ -80,7 +80,7 @@ Requirements/Contingencies:
     ```JavaScript
     func onCLASSIDInput(UserObject currentStudent, String classid){
     
-      ClassObject classOfInterest = Classes.findByParameter(classid)
+      ClassObject classOfInterest = Classes.findByCLASSID(classid)
       currentStudent.classesTaken.append(classOfInterest)
       classOfInterest.students.append(currentStudent)
       
